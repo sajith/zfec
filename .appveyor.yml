@@ -1,7 +1,7 @@
 environment:
   global:
     CIBW_TEST_REQUIRES: tox
-    CIBW_TEST_COMMAND: "tox -e py"
+    CIBW_TEST_COMMAND: "pwd; tox -e py"
 
   matrix:
     - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
