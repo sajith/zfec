@@ -1,4 +1,8 @@
 environment:
+  global:
+    CIBW_TEST_REQUIRES: tox
+    CIBW_TEST_COMMAND: "tox -e py"
+
   matrix:
     - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
       APPVEYOR_JOB_NAME: "python37-x64-ubuntu"
