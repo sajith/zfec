@@ -49,4 +49,4 @@ jobs:
           pip list
 
       - name: Run tox
-        run: tox -e py
+        run: tox
