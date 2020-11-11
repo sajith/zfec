@@ -47,5 +47,5 @@ jobs:
           pip install --upgrade tox setuptools
           pip list
 
-      - name: Run tox
+      - name: Run "tox -e py"
         run: tox -e py
